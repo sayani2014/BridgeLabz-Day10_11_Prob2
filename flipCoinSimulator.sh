@@ -24,6 +24,14 @@ do
 		elif (( $countHead>=21 && $countTail>=21 ))
 		then
 			echo "Its a tie"
+			diff=$(($countHead-$countTail))
+			if(($diff==2))
+			then
+				echo "Game over!"
+			else
+				i=0
+				continue
+			fi
 		else
 			i=0
 			continue
